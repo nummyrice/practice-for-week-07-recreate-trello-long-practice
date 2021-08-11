@@ -51,6 +51,40 @@ body {
   padding: 3px;
 
 }
+.tabbed-nav__container {
+  background-color: #f4f5f7;
+}
+.tabbed-nav__group {
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+}
+.tabbed-nav__link {
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0px;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0 5px;
+  color: #172b4d;
+}
+@media screen and (max-width: 500px) {
+  .tabbed-nav__group,
+  .tabbed-nav__link {
+    display: block;
+    /* flex-direction: column; */
+
+
+  }
+
+  /* .tabbed-nav__group {
+    display: block;
+  } */
+
+
+}
 /* .header-nav__group#trello-logo{
   display:flex;
   justify-content: center;
