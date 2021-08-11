@@ -1,11 +1,43 @@
 /* Your code here */
+@media screen and (max-width: 730px) {
+
+.header-nav__button#search > input{
+  display: none;
+}
+span.boards-label{
+  display: none;
+}
+}
 body {
-  font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Segoe UI',
+  'Roboto', 'Noto Sans',
+  'Ubuntu', 'Droid Sans',
+  'Helvetica Neue', sans-serif;
   font-size: 14px;
   margin: 0px;
 }
-
-.header-nav_container {
+.team__container {
+  background-color: #f4f5f7;
+  padding: 32px;
+}
+.team__info{
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+.team__info > h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.team__info a {
+  color: #172b4d;
+  line-height: 20px;
+  font-weight: normal;
+}
+.header-nav__container {
   background-color: #026AA7;
   font-size: 16px;
   line-height: 20px;
@@ -14,6 +46,15 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header-nav__group{
+  display: flex;
+  padding: 3px;
+
+}
+/* .header-nav__group#trello-logo{
+  display:flex;
+  justify-content: center;
+} */
 /* Supplied CSS follows. */
 .header-nav__button {
   display: inline;
@@ -46,7 +87,9 @@ body {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-
+.header-nav__button#alerts {
+  background-color: #CF513D;
+}
 .header-nav__button > .boards-label {
   font-weight: 700;
   padding-left: 4px;
