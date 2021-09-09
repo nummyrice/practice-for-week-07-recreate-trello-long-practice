@@ -1,145 +1,36 @@
 /* Your code here */
-@media screen and (max-width: 730px) {
-
-.header-nav__button#search > input{
-  display: none;
-}
-span.boards-label{
-  display: none;
-}
-}
-body {
-  font-family: 'Segoe UI',
-  'Roboto', 'Noto Sans',
-  'Ubuntu', 'Droid Sans',
-  'Helvetica Neue', sans-serif;
+.body {
+  font-family: 'Segoe UI', Tahoma,
+  Geneva, Verdana, sans-serif;
   font-size: 14px;
   margin: 0px;
+
 }
-.team__container {
-  background-color: #f4f5f7;
-  padding: 32px;
-}
-.team__info{
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 650px;
-  text-align: center;
-}
-.team__info > h1 {
-  margin: 0 0 12px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 28px;
-}
-.team__info a {
-  color: #172b4d;
-  line-height: 20px;
-  font-weight: normal;
-}
-.header-nav__container {
-  background-color: #026AA7;
+
+.header-nav__container{
+  background-color: #026AA7 ;
   font-size: 16px;
-  line-height: 20px;
   padding: 4px;
   color: white;
+  line-height: 20px;
   display: flex;
   justify-content: space-between;
+
 }
+
 .header-nav__group{
-  display: flex;
-  padding: 3px;
-
-}
-.tabbed-nav__container {
-  background-color: #f4f5f7;
-}
-.tabbed-nav__group {
-  border-bottom: 1px solid #dfe1e6;
-  display: flex;
-  justify-content: center;
-}
-.tabbed-nav__link {
-  background-color: white;
-  border: 1px solid #dfe1e6;
-  border-bottom: 0px;
-  border-radius: 2px;
-  font-weight: bold;
-  line-height: 20px;
-  padding: 10px;
-  margin: 0 5px;
-  color: #172b4d;
-}
-.boards__container{
-  margin: 0 auto;
-  padding: 32px;
-  max-width: 1400px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.boards__sidebar{
-background-color: #6c547b;
-border-radius: 3px;
-margin: 0 32px 32px 0;
-padding: 0 20px 32px 20px;
-max-height: 130px;
-max-width: 180px;
-width: 20%;
-flex-grow: 0;
-flex-shrink: 0;
-flex-basis: 220px;
-}
-.boards__sidebar .title,a{
-  color: white;
-}
-.boards__sidebar .description{
-  color: lightblue;
-}
-.boards__group{
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-}
-.boards__board{
-  background-color: black;
-  color: white;
-border-radius: 3px;
-box-sizing: border-box;
-font-weight: bold;
-margin: 0 8px 16px;
-padding: 4px 8px;
-height: 100px;
-max-width: 250px;
-width: 25%;
-position: relative;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-
-}
-@media screen and (max-width: 500px) {
-  .tabbed-nav__group,
-  .tabbed-nav__link {
-    display: block;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1280px){
-.boards__board{
-  width: 33%;
-}
+ display: flex;
+ justify-content: center;
 }
 
-@media screen and (max-width: 750px){
-  .boards__board{
-    width: 100%;
-    max-width: unset;
-  }
+.header-nav__link {
+  margin: ;
+
 }
-/* .header-nav__group#trello-logo{
-  display:flex;
-  justify-content: center;
-} */
+
+.header-nav__button#alerts {
+  background-color: #CF513D;
+}
 /* Supplied CSS follows. */
 .header-nav__button {
   display: inline;
@@ -172,9 +63,7 @@ justify-content: space-around;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.header-nav__button#alerts {
-  background-color: #CF513D;
-}
+
 .header-nav__button > .boards-label {
   font-weight: 700;
   padding-left: 4px;
@@ -187,4 +76,12 @@ justify-content: space-around;
   position: absolute;
   transform: translateX(-50%);
   top: 5px;
+  padding-top: 8px;
+
+}
+
+@media screen and (max-width: 730px){
+  .header-nav__button#search {
+    display: none;
+  }
 }
