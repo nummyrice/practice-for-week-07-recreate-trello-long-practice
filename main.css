@@ -1,4 +1,7 @@
 /* Your code here */
+
+@import "./board-backgrounds/"
+
 .body {
   font-family: 'Segoe UI', Tahoma,
   Geneva, Verdana, sans-serif;
@@ -147,8 +150,103 @@
   max-height: 130px;
   max-width: 180px;
   width: 20%;
+  flex: 0 1 220px
 }
 
+.title, .boards__sidebar-content a {
+  color: white
+}
+
+.boards__sidebar-content .description {
+  color: lightblue
+}
+
+.boards__group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.boards__board {
+  background-color: black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+  height: 100px;
+  margin: 0 8px 16px;
+  max-width: 250px;
+  padding: 4px 8px;
+  position: relative;
+  color: white;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-1 {
+  background-image: url("./board-backgrounds/board-9-background.jpg");
+}
+
+.board-2 {
+  background-image: url("./board-backgrounds/board-2-background.jpg");
+
+}
+
+.board-3 {
+  background-image: url("./board-backgrounds/board-1-background.jpg");
+  background-position: right ;
+}
+
+.board-4 {
+  background-image: url("./board-backgrounds/board-3-background.jpg");
+  background-position: right;
+}
+
+.board-5 {
+  background-image: url("./board-backgrounds/board-4-background.jpg");
+  background-position: right;
+}
+
+.board-6 {
+  background-image: url("./board-backgrounds/board-5-background.jpg");
+  background-position: right;
+}
+
+.board-7 {
+  background-image: url("./board-backgrounds/board-6-background.jpg");
+  background-position: right;
+}
+
+.board-8 {
+  background-image: url("./board-backgrounds/board-7-background.jpg");
+  background-position: right;
+}
+
+.board-9 {
+  background-image: url("./board-backgrounds/board-8-background.jpg");
+  background-position: right;
+}
+
+.board-10 {
+  background-image: url("./board-backgrounds/board-10-background.jpg");
+  background-position: right;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1281px){
+  .boards__board {
+    width: 33%
+  }
+}
+
+@media screen and (max-width: 751px){
+  .boards__board {
+    width: 100%;
+    max-width: none;
+  }
+  .boards__container{
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 500px) {
   .tabbed-nav__group, .tabbed-nav__link {
     display: block;
